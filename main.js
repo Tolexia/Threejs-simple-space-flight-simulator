@@ -21,6 +21,7 @@ const light = new THREE.AmbientLight( 0x404040 ); // soft white light
 light.intensity = 200
 scene.add( light );
 
+const sun_direction = new THREE.Vector3(-50, 50, 50)
 const directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
 directionalLight.position.set(sun_direction.x, sun_direction.y, sun_direction.z)
 light.intensity = 20
@@ -68,8 +69,10 @@ scene.add( particles );
 /**
  * Spaceship
  */
-const spaceship_geometry = new THREE.BoxGeometry(10,10,10)
-const spaceship_material = new THREE.MeshBasicMaterial()
+const spaceship_geometry = new THREE.ConeGeometry(1,22,6)
+spaceship_geometry.scale(5, 1, 1)
+spaceship_geometry.rotateX(Math.PI/2)
+const spaceship_material = new THREE.MeshNormalMaterial()
 const spaceship = new THREE.Mesh(spaceship_geometry, spaceship_material)
 
 scene.add(spaceship)
