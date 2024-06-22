@@ -12,4 +12,12 @@ This is the most basic features to simulate a flight travel into space :
 
 To go further, feel free to modify physics with velocity, add a model, asteroids, maybe lasers. 
 
-If you find improvements, let me know, and enjoy coding
+I would appreciate any advice or improvement ideas, so let me know, and enjoy coding !
+
+## Preview
+
+![preview](./preview.gif)
+
+## Demo
+
+[Live Demo Here](https://tolexia.github.io/Threejs-simple-space-flight-simulator/)
